@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--Color-Palette-Primary-Off-White, #F5F5F5) !important;
+  color: var(--Color-Palette-Primary-Mid, #233E76)!important;
+  
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    background: #FFFFFF !important;
+  }
+}
+

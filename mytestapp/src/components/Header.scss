@@ -1,0 +1,142 @@
+$drawer-width: 240px;
+
+.AppBar {
+  background-color: #f5f5f5 !important;
+  color: #233e76 !important;
+  height: 112px;
+  justify-content: center;
+  box-shadow: none !important;
+}
+
+.Toolbar {
+  .Logo {
+    flex-grow: 1;
+    display: block;
+
+    @media (min-width: 600px) {
+      text-align: left;
+    }
+
+    @media (max-width: 599px) {
+      text-align: left;
+    }
+  }
+
+  .NavItems {
+    display: none;
+    align-items: center;
+    color: #233e76 !important;
+
+    @media (min-width: 600px) {
+      display: flex;
+    }
+
+    .SignInButton {
+      margin-left: 1rem;
+      background: var(--Color-Palette-Action-Green, #52B947);
+
+    }
+  }
+}
+
+.DrawerBox {
+  text-align: center;
+  box-shadow: none;
+
+  .DrawerLogo {
+    margin: 1rem 0;
+    color: #233e76;
+  }
+
+  .DrawerNavItem {
+    text-align: center;
+    color: #233e76 !important;
+  }
+
+  .SearchIcon {
+    color: #233e76;
+  }
+
+  .SignInButton {
+    margin-top: 1rem;
+  }
+}
+
+.MainContent {
+  padding: 3rem 0;
+  margin-top: 5rem;
+
+  @media (max-width: 599px) {
+    padding: 1rem;
+    margin-top: 0;
+    font-size: 20px !important;
+  }
+}
+
+.BasicGrid {
+  flex-grow: 1;
+  margin-top: 5rem;
+  text-align: start;
+
+  .WelcomeText {
+    margin-top: 3rem;
+  }
+
+  .StartHereText {
+ 
+    font-weight: 500 !important;
+    color: #233e76 !important;
+
+    @media (max-width: 599px) {
+      // margin-top: 2rem;
+    }
+  }
+
+  .primaryButtonGroup,
+  .APIButtonGroup {
+    // margin-top: 2rem;
+    text-transform: lowercase;
+    box-shadow: none !important;
+
+
+    .primaryButton {
+      text-transform: lowercase;
+      background: var(--Color-Palette-Action-Green, #52B947);
+
+    }
+
+    .APIButton{
+      background: var(--Color-Palette-Action-Green, #52B947);
+
+    }
+
+    @media (max-width: 599px) {
+      // margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+
+      .primaryButton,
+      .APIButton {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .APIButtonGroup {
+    .APIButton {
+      margin-right: 1rem;
+      text-decoration: underline;
+      text-transform: none;
+      color: white;
+    }
+  }
+
+  .ImageContainer {
+    height: 112px !important;
+
+    @media (max-width: 599px) {
+      display: none;
+    }
+  }
+}
